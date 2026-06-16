@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { PortalNav } from "@/components/nav/portal-nav";
 
-const inter = Inter({subsets:['latin'],variable:'--font-sans'});
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -17,7 +18,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
     title: "AI Health Portal",
-    description: "Ai health portal",
+    description: "Next-gen healthcare document parser and analyzer",
 };
 
 export default function RootLayout({
@@ -28,8 +29,19 @@ export default function RootLayout({
     return (
         <html
             lang="en"
-            className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}>
-            <body className="min-h-full flex flex-col">{children}</body>
+            className={cn(
+                "h-full",
+                "antialiased",
+                geistSans.variable,
+                geistMono.variable,
+                "font-sans",
+                inter.variable,
+            )}>
+            <body
+                className={`${inter.className} bg-slate-100 text-slate-900 min-h-screen antialiased`}>
+                <PortalNav/>
+                {children}
+            </body>
         </html>
     );
 }
