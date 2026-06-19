@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { User, Stethoscope, ShieldAlert, Home } from "lucide-react";
+import Image from "next/image";
 
 export function PortalNav() {
     const pathname = usePathname();
@@ -16,15 +17,22 @@ export function PortalNav() {
     ];
 
     return (
-        // ফুল স্ক্রিন ব্যাকগ্রাউন্ড এবং বর্ডার
         <nav className="w-full bg-white border-b border-slate-200 sticky top-0 z-50 shadow-xs">
-            {/* ভেতরের মেইন কন্টেন্ট যা নিচের পেজের উইডথ max-w-5xl এর সাথে মিলবে */}
             <div className="max-w-7xl mx-auto px-4 md:px-6 py-3 flex items-center justify-between">
                 {/* Logo Section */}
                 <div className="flex items-center gap-2 shrink-0">
-                    <div className="w-2.5 h-2.5 rounded-full bg-indigo-600 animate-pulse" />
+                    <div>
+                        <Image
+                            src="/mainLogo.png"
+                            className=""
+                            width={35}
+                            height={35}
+                            alt="Picture of the Logo"
+                        />
+                    </div>
+
                     <span className="font-bold text-slate-900 tracking-tight text-sm md:text-base">
-                        Clinical<span className="text-indigo-600">Intel</span>
+                        Health<span className="text-indigo-600">Sync</span>
                     </span>
                 </div>
 

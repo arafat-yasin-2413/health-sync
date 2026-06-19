@@ -19,7 +19,7 @@ import {
     RefreshCw,
     Trash2,
 } from "lucide-react";
-import { PortalNav } from "@/components/nav/portal-nav";
+import { PortalNav } from "@/components/nav/PortalNav";
 
 export default function AdminConsole() {
     const [mounted, setMounted] = useState(false);

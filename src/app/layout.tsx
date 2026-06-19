@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "AI Health Portal",
+    title: "Health Sync",
     description: "Next-gen healthcare document parser and analyzer",
 };
 

@@ -30,7 +30,7 @@ import {
     FileText,
     Maximize2,
 } from "lucide-react";
-import { PortalNav } from "@/components/nav/portal-nav";
+import { PortalNav } from "@/components/nav/PortalNav";
 
 export default function DoctorDashboard() {
     const [mounted, setMounted] = useState(false);

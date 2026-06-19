@@ -24,7 +24,7 @@ import {
     AlertCircle,
     CheckCircle2,
 } from "lucide-react";
-import { PortalNav } from "@/components/nav/portal-nav";
+import { PortalNav } from "@/components/nav/PortalNav";
 
 interface Patient {
     patientId: string;
