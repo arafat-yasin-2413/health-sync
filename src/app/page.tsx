@@ -13,6 +13,8 @@ import {
 import PatientPortalCard from "@/components/home/PatientPortalCard";
 import DoctorPortalCard from "@/components/home/DoctorPortalCard";
 import AdminPortalCard from "@/components/home/AdminPortalCard";
+import { CanvasText } from "@/components/ui/canvas-text";
+import { TextHoverEffect } from "@/components/ui/text-hover-effect";
 
 export default function Home() {
     // const [mounted, setMounted] = useState(false);
@@ -75,6 +77,10 @@ export default function Home() {
                     </span>
                 </div>
             </div>
+            
+            <TextHoverEffect text="AI Clinical Intelligence Portal">
+
+            </TextHoverEffect>
 
             {/* Hero Header */}
             <div className="text-center mb-12">
