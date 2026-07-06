@@ -4,17 +4,12 @@ import { useEffect } from "react";
 
 import { defaultPatients, defaultDoctors } from "@/utils/mockData";
 import {
-    ShieldAlert,
-    User,
-    Stethoscope,
-    ArrowRight,
     Sparkles,
 } from "lucide-react";
 import PatientPortalCard from "@/components/home/PatientPortalCard";
 import DoctorPortalCard from "@/components/home/DoctorPortalCard";
 import AdminPortalCard from "@/components/home/AdminPortalCard";
-import { CanvasText } from "@/components/ui/canvas-text";
-import { TextHoverEffect } from "@/components/ui/text-hover-effect";
+import { BackgroundLinesText } from "@/components/BackgroundLinesText";
 
 export default function Home() {
     // const [mounted, setMounted] = useState(false);
@@ -78,12 +73,11 @@ export default function Home() {
                 </div>
             </div>
             
-            <TextHoverEffect text="AI Clinical Intelligence Portal">
 
-            </TextHoverEffect>
+            <BackgroundLinesText/>
 
             {/* Hero Header */}
-            <div className="text-center mb-12">
+            {/* <div className="text-center mb-12">
                 <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-slate-900">
                     AI Clinical{" "}
                     <span className="text-indigo-600">Intelligence Portal</span>
@@ -93,10 +87,10 @@ export default function Home() {
                     utilizing automated AI structural extraction and custom
                     cross-portal data states.
                 </p>
-            </div>
+            </div> */}
 
             {/* Portals Gateway Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-12">
                 <PatientPortalCard />
                 <DoctorPortalCard />
                 <AdminPortalCard />
