@@ -76,19 +76,6 @@ export default function Home() {
 
             <BackgroundLinesText/>
 
-            {/* Hero Header */}
-            {/* <div className="text-center mb-12">
-                <h1 className="text-4xl font-extrabold tracking-tight sm:text-5xl text-slate-900">
-                    AI Clinical{" "}
-                    <span className="text-indigo-600">Intelligence Portal</span>
-                </h1>
-                <p className="mt-4 text-base text-slate-500 max-w-2xl mx-auto">
-                    A high-performance client-side medical architecture
-                    utilizing automated AI structural extraction and custom
-                    cross-portal data states.
-                </p>
-            </div> */}
-
             {/* Portals Gateway Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-12">
                 <PatientPortalCard />
