@@ -1,11 +1,17 @@
-import React from "react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardHeader,
+    CardTitle,
+} from "../ui/card";
 import { ArrowRight, ShieldAlert, Stethoscope, User } from "lucide-react";
 import Link from "next/link";
 import { Button } from "../ui/button";
 
 export default function PatientPortalCard() {
     return (
+        <>
             <Card className="flex flex-col justify-between border-slate-200 shadow-sm bg-white hover:border-indigo-200 transition-all">
                 <CardHeader>
                     <div className="p-2.5 w-fit bg-indigo-50 rounded-lg mb-2 text-indigo-600">
@@ -27,8 +33,9 @@ export default function PatientPortalCard() {
                             <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                         </Button>
                     </Link>
+                    {/* <CustomButton text="Enter Patient Hub" hyperlink="/patient" background="bg-amber-500"/> */}
                 </CardContent>
             </Card>
-        
+        </>
     );
 }

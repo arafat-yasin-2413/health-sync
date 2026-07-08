@@ -3,9 +3,7 @@
 import { useEffect } from "react";
 
 import { defaultPatients, defaultDoctors } from "@/utils/mockData";
-import {
-    Sparkles,
-} from "lucide-react";
+import { Sparkles } from "lucide-react";
 import PatientPortalCard from "@/components/home/PatientPortalCard";
 import DoctorPortalCard from "@/components/home/DoctorPortalCard";
 import AdminPortalCard from "@/components/home/AdminPortalCard";
@@ -72,9 +70,18 @@ export default function Home() {
                     </span>
                 </div>
             </div>
-            
 
-            <BackgroundLinesText/>
+            {/* <BackgroundLinesText/> */}
+            <div>
+                <h2 className="bg-clip-text text-transparent text-center bg-linear-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
+                    AI Clinical Intelligence Portal
+                </h2>
+                <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-center">
+                    A high-performance client-side medical architecture
+                    utilizing automated AI structural extraction and custom
+                    cross-portal data states.
+                </p>
+            </div>
 
             {/* Portals Gateway Cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mt-12">
