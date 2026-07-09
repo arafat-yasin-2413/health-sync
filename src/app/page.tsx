@@ -7,7 +7,6 @@ import { Sparkles } from "lucide-react";
 import PatientPortalCard from "@/components/home/PatientPortalCard";
 import DoctorPortalCard from "@/components/home/DoctorPortalCard";
 import AdminPortalCard from "@/components/home/AdminPortalCard";
-import { BackgroundLinesText } from "@/components/BackgroundLinesText";
 
 export default function Home() {
     // const [mounted, setMounted] = useState(false);
@@ -71,7 +70,6 @@ export default function Home() {
                 </div>
             </div>
 
-            {/* <BackgroundLinesText/> */}
             <div>
                 <h2 className="bg-clip-text text-transparent text-center bg-linear-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight">
                     AI Clinical Intelligence Portal
