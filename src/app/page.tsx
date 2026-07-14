@@ -10,6 +10,7 @@ import AdminPortalCard from "@/components/home/AdminPortalCard";
 
 export default function Home() {
     // const [mounted, setMounted] = useState(false);
+    
 
     useEffect(() => {
         // Fail-Safe Flow: Default data seed into localStorage on first load
