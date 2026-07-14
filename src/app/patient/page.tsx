@@ -42,6 +42,8 @@ export default function PatientPage() {
         type: string;
     } | null>(null);
 
+
+
     // utility for loading dynamic patient list from localStorage
     useEffect(() => {
         setMounted(true);
@@ -124,7 +126,7 @@ export default function PatientPage() {
                 } else {
                     setErrorMsg(
                         result.error ||
-                            "AI pipeline could not parse the document structure.",
+                        "AI pipeline could not parse the document structure.",
                     );
                     setSelectedFile(null);
                 }
@@ -186,11 +188,10 @@ export default function PatientPage() {
                     <CardContent className="p-6">
                         <div
                             {...getRootProps()}
-                            className={`p-10 flex flex-col items-center justify-center border-2 border-dashed rounded-xl transition-all relative cursor-pointer ${
-                                isDragActive
+                            className={`p-10 flex flex-col items-center justify-center border-2 border-dashed rounded-xl transition-all relative cursor-pointer ${isDragActive
                                     ? "border-indigo-500 bg-indigo-50/50 scale-[0.99]"
                                     : "border-slate-300 hover:border-indigo-400 bg-slate-50/50"
-                            } ${loading ? "pointer-events-none opacity-60" : ""}`}>
+                                } ${loading ? "pointer-events-none opacity-60" : ""}`}>
                             <input {...getInputProps()} />
                             <div className="text-center space-y-3">
                                 <div className="p-4 bg-white rounded-full shadow-sm w-fit mx-auto border text-indigo-600">
@@ -224,11 +225,10 @@ export default function PatientPage() {
                         <div className="flex items-center gap-3 min-w-0">
                             {/* Conditional Icon Layout */}
                             <div
-                                className={`p-2.5 rounded-lg border shrink-0 ${
-                                    selectedFile.type === "PDF Document"
+                                className={`p-2.5 rounded-lg border shrink-0 ${selectedFile.type === "PDF Document"
                                         ? "bg-rose-50 border-rose-100 text-rose-600"
                                         : "bg-blue-50 border-blue-100 text-blue-600"
-                                }`}>
+                                    }`}>
                                 <FileText className="h-5 w-5" />
                             </div>
 

@@ -19,6 +19,7 @@ export default function Home() {
                     "medical_patients",
                     JSON.stringify(defaultPatients),
                 );
+                // this is new line
             }
 
             if (!localStorage.getItem("medical_doctors")) {
