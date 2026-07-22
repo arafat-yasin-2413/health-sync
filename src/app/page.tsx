@@ -62,12 +62,12 @@ export default function Home() {
                     </div>
                     <div className="flex flex-wrap gap-2 text-xs font-mono">
                         <span className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-indigo-200 dark:border-indigo-800 px-3 py-1.5 rounded-lg shadow-sm text-slate-700 dark:text-slate-300">
-                            Demo Patient:{" "}
-                            <strong className="text-indigo-600 dark:text-indigo-400">PAT-101</strong>
+                            <span className="font-semibold">Demo Patient:</span>{" "}
+                            <strong className="">PAT-101</strong>
                         </span>
                         <span className="bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm border border-indigo-200 dark:border-indigo-800 px-3 py-1.5 rounded-lg shadow-sm text-slate-700 dark:text-slate-300">
-                            Demo Doctor:{" "}
-                            <strong className="text-indigo-600 dark:text-indigo-400">DOC-202</strong>
+                            <span className="font-semibold">Demo Doctor:</span>{" "}
+                            <strong className="">DOC-202</strong>
                         </span>
                     </div>
                 </div>
